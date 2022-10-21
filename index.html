@@ -175,13 +175,85 @@
                 </li>
             </ol>
         </section>
+        <section>
+            <div class="container">
+                <div class="special-offer">
+                    <div class="special-offer__header">
+                        <p class="special-offer__lead">Заинтересовались?
+                        </p>
+                        <p class="special-offer__lead-description">
+                            Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне
+                        </p>
+                    </div>
+                    <button class="special-offer__button button button--primary button--size-xl">Поиск гостиницы в седоне</button>
+                    <div class="special-offer__form-search ">
+                        <form action="get" class="form-search">
+                            <div class="form-search__group">
+                                <label class="form-label" for="arrial-field">Дата заезда:</label>
+                                <input type="date" id="arrial-field" name="arial" value="2017-04-24">
+                            </div>
+                            <div class="form-search__group">
+                                <label class="form-label" for="departure-field">Дата Выезда:</label>
+                                <input type="date" id="departure-field" name="departure" value="2017-06-04">
+                            </div>
+                            <div class="form-search__group form-search__group--counter">
+                                <div class="form-search__count count--older">
+                                    <label class="form-label" for="count-older">Взрослые:</label>
+                                    <div class="counter-display">
+                                        <button class="button counter-display__remove">&ndash;</button>
+                                        <input type="number" name="count" id="count-older" value="2" min="0" max="50">
+                                        <button class="button counter-display__add">+</button>
+                                    </div>
+                                </div>
+                                <div class="form-search__count count--kids">
+                                    <label class="form-label" for="count-kids">Дети:</label>
+                                    <div class="counter-display">
+                                        <button class="button counter-display__remove">&ndash;</button>
+                                        <input type="number" name="count" id="count-kids" value="0" min="0" max="50">
+                                        <button class="button counter-display__add">+</button>
+                                    </div>
 
+                                </div>
+                            </div>
+                            <button class="form-search__button button button--size-l button--secondary">Найти</button>
+                        </form>
+                    </div>
+                    <div class="special-offer__map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13567356731!2d-111.83024356618367!3d34.854443790430125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1666354458890!5m2!1sru!2sru"
+                            width="100%" height="473" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
 
-    <footer class="page__footer page-footer"></footer>
-
+    <footer class="page__footer page-footer container">
+        <div class="page-footer__wrapper ">
+            <div class="page-footer__contacts contacts">
+                <p class="contacts__hashtag">#visitSEDONA</p>
+                <a href="tel:78005558628" class="contacts__phone">+7 800 555-86-28</a>
+            </div>
+            <div class="page-footer__social social">
+                <ul class="social__list list">
+                    <li class="social__item">
+                        <a class="social__link social__link--twitter"></a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--facebook"></a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--youtube"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="page-footer__copyright">
+                <p class="copyright__subtitle">Website by</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/popup.js"></script>
 </body>
 
 </html>
